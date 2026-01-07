@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@stdlib/number-float16-base-ulp-difference": "github:stdlib-js/number-float16-base-ulp-difference#main",
-    "@stdlib/number-float64-base-to-float16": "github:stdlib-js/number-float64-base-to-float16#main"
+    "@stdlib/number-float64-base-to-float16": "github:stdlib-js/number-float64-base-to-float16#main",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.2.2",
