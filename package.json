@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/number-float16-base-ulp-difference": "github:stdlib-js/number-float16-base-ulp-difference#main",
+    "@stdlib/number-float16-base-ulp-difference": "^0.1.0",
     "@stdlib/number-float64-base-to-float16": "^0.1.0"
   },
   "devDependencies": {
