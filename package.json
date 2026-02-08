@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-float16-base-assert-is-almost-equal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test if two half-precision floating-point numbers are approximately equal within a specified number of ULPs (units in the last place).",
   "license": "Apache-2.0",
   "author": {
@@ -38,15 +38,15 @@
   },
   "dependencies": {
     "@stdlib/number-float16-base-ulp-difference": "^0.1.0",
-    "@stdlib/number-float64-base-to-float16": "^0.1.0"
+    "@stdlib/number-float64-base-to-float16": "^0.1.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-boolean": "^0.2.2",
-    "@stdlib/constants-float16-eps": "^0.2.2",
+    "@stdlib/assert-is-boolean": "^0.2.3",
+    "@stdlib/constants-float16-eps": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
