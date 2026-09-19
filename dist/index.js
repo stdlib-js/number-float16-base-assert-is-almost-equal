@@ -1,5 +1,43 @@
-"use strict";var a=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(i){throw (r=0, i)}};};var s=a(function(c,u){
-var t=require('@stdlib/number-float64-base-to-float16/dist'),f=require('@stdlib/number-float16-base-ulp-difference/dist');function n(e,r,i){return f(t(e),t(r))<=i}u.exports=n
-});var o=s();module.exports=o;
 /** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Test if two half-precision floating-point numbers are approximately equal within a specified number of ULPs (units in the last place).
+*
+* @module @stdlib/number-float16-base-assert-is-almost-equal
+*
+* @example
+* var EPS = require( '@stdlib/constants-float16-eps' );
+* var isAlmostEqual = require( '@stdlib/number-float16-base-assert-is-almost-equal' );
+*
+* var bool = isAlmostEqual( 1.0, 1.0+EPS, 1 );
+* // returns true
+*
+* bool = isAlmostEqual( 1.0+EPS, 1.0, 1 );
+* // returns true
+*
+* bool = isAlmostEqual( 1.0, 1.0+EPS+EPS, 1 );
+* // returns false
+*
+* bool = isAlmostEqual( 1.0, 1.0+EPS, 0 );
+* // returns false
+*
+* bool = isAlmostEqual( 0.0, -0.0, 0 );
+* // returns true
+*
+* bool = isAlmostEqual( 1.0, NaN, 1 );
+* // returns false
+*
+* bool = isAlmostEqual( NaN, NaN, 1 );
+* // returns false
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;
